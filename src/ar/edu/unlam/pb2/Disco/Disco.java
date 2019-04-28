@@ -7,31 +7,53 @@ public class Disco {
 		this.radioInterior= radioInterior;
 		this.radioExterior= radioExterior;
 	}
-	public double getSuperficie() {
+	
+	
+	public double calcularSuperficie() {
 		superficie = (Math.PI*(Math.pow(radioExterior, 2)))- (Math.PI*(Math.pow(radioInterior, 2)));
 		return superficie;
 	}
+	
+	public double calcularPerimetroInterior() {
+		perimetroInterior = 2 *Math.PI*radioInterior;
+		return perimetroInterior;
+		
+	}
+	
+	public double calcularPerimetroExterior() {
+		perimetroExterior= 2*Math.PI*radioExterior;
+		return perimetroExterior;
+		}
+	
+	
+	public double getSuperficie() {
+		return superficie;
+	}
+	
 	public double getRadioInterior() {
 		return radioInterior;
 	}
-	public void setRadioInterior(double radioInterior) {
-		this.radioInterior = radioInterior;
-	}
+
 	public double getRadioExterior() {
 		return radioExterior;
 	}
-	public void setRadioExterior(double radioExterior) {
-		this.radioExterior = radioExterior;
-	}
+	
 	public double getPerimetroInterior() {
-		perimetroInterior = 2 *Math.PI*radioInterior;
 		return perimetroInterior;
 	}
+	
 	public double getPerimetroExterior() {
-		perimetroExterior= 2*Math.PI*radioExterior;
 		return perimetroExterior;
 	}
 	
+	public void setRadioInterior(double radioInterior) {
+		this.radioInterior = radioInterior;
+	}
+	
+	public void setRadioExterior(double radioExterior) {
+		this.radioExterior = radioExterior;
+	}
+
 	
 	
 	
